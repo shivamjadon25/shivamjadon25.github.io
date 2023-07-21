@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "name": "Shivam Jadon",
-    "titles": [ "Front-end Developer", "Android and Linux Enthusiast", "Android Kernel Developer" ],
+    "titles": [ "Front-end Developer", "Linux Enthusiast", "Android Kernel Developer" ],
     "social": [
       {
         "name": "github",
@@ -10,7 +10,7 @@
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/shivamjadon",
+        "url": "https://www.instagram.com/_shivamjadon",
         "class": "fab fa-instagram"
       }
     ],
