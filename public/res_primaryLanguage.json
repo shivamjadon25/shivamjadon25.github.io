@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Hi",
-    "description": "👋 I'm Shivam Jadon. Fictional person for preview purposes :) I'm working with newest front-end frameworks like React. Thank you 💜",
+    "description": "👋 I'm Shivam Jadon. Mechanical Engineer turned Front-End Developer with a passion for programming and a love for Urdu and Hindi poetry. Skilled in crafting visually appealing and user-friendly interfaces, combining technical expertise with a creative flair. A dedicated individual with a keen eye for aesthetics and a background in problem-solving.",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -11,14 +11,13 @@
   },
   "projects": [
     {
-      "title": "Photography",
-      "startDate": "2018",
-      "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+      "title": "Drona Kernel",
+      "startDate": "2020",
+      "description": "Personal project for study subject. I was responsible for creating an android kernel for Redmi 5 device. You can control the charging speed, CPU and GPU frequencies. I created a overclocked version of this kernel as well :)",
       "images": [
-        "portfolio/photography/p1.jpg",
-        "portfolio/photography/p2.jpg"
+        "portfolio/photography/p1.jpg"
       ],
-      "url": "https://github.com/shivamjadon",
+      "url": "https://github.com/shivamjadon/Drona_Kernel_Rosy",
       "technologies": [
         {
           "class": "devicon-react-original",
@@ -41,7 +40,6 @@
       ],
       "technologies": [
         "REST API",
-        "RxJS",
         "JavaScript",
         "Bootstrap",
         "ReactJs",
