@@ -12,6 +12,11 @@
         "name": "instagram",
         "url": "https://www.instagram.com/_shivamjadon",
         "class": "fab fa-instagram"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/TheShivamJadon/",
+        "class": "fab fa-twitter"
       }
     ],
     "image": "profilePic.png"

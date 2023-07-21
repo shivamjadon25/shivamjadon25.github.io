@@ -15,13 +15,56 @@
       "startDate": "2020",
       "description": "Personal project for study subject. I was responsible for creating an android kernel for Redmi 5 device. You can control the charging speed, CPU and GPU frequencies. I created a overclocked version of this kernel as well :)",
       "images": [
-        "portfolio/photography/p1.jpg"
+        "images/portfolio/photography/p1.jpeg"
       ],
       "url": "https://github.com/shivamjadon/Drona_Kernel_Rosy",
       "technologies": [
         {
           "class": "devicon-react-original",
           "name": "React"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Android ROM",
+      "startDate": "2021",
+      "description": "Personal project. I was responsible for building and maintaining an android skin based on Google's AOSP for Poco X2(Phoenixin) device. The name of that rom was Project Sakura it was build on top of AOSP with many customizations options :)",
+      "images": [
+        "images/portfolio/rom/p1.png",
+        "images/portfolio/rom/p2.png"
+      ],
+      "url": "https://forum.xda-developers.com/t/rom-11-0-project-sakura-official.4233069/",
+      "technologies": [
+        {
+          "class": "devicon-python-original",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Website",
+      "startDate": "2021",
+      "description": "Personal portfolio website build using HTML, CSS, Javascript :)",
+      "images": [
+        "images/portfolio/portfolio/p1.png"
+      ],
+      "url": "https://github.com/shivamjadon/shivamjadon.github.io",
+      "technologies": [
+        {
+          "class": "devicon-html-original",
+          "name": "HTML"
+        },
+        {
+          "class": "devicon-css-plain",
+          "name": "CSS"
         },
         {
           "class": "devicon-javascript-plain",
