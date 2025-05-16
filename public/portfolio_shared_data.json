@@ -1,11 +1,11 @@
 {
   "basic_info": {
     "name": "Shivam Jadon",
-    "titles": [ "Front-end Developer", "Linux Enthusiast", "Android Kernel Developer" ],
+    "titles": [ "Fullstack Developer", "MERN Stack" ],
     "social": [
       {
         "name": "github",
-        "url": "https://github.com/shivamjadon",
+        "url": "https://github.com/shivamjadon25",
         "class": "fab fa-github"
       },
       {
@@ -25,42 +25,77 @@
     "icons": [
       {
         "name": "HTML 5",
-        "class": "devicon-html5-plain",
+        "class": "devicon-html5-plain colored",
         "level": "95"
       },
       {
         "name": "CSS 3",
-        "class": "devicon-css3-plain",
+        "class": "devicon-css3-plain colored",
         "level": "95"
       },
       {
         "name": "JavaScript",
-        "class": "devicon-javascript-plain",
+        "class": "devicon-javascript-plain colored",
         "level": "70"
       },
       {
         "name": "React",
-        "class": "devicon-react-plain",
+        "class": "devicon-react-plain colored",
         "level": "85"
       },
       {
         "name": "MaterialUI",
-        "class": "devicon-materialui-plain",
+        "class": "devicon-materialui-plain colored",
         "level": "85"
       },
       {
         "name": "Python",
-        "class": "devicon-python-plain",
+        "class": "devicon-python-plain colored",
         "level": "70"
       },
       {
-        "name": "Git Bash",
-        "class": "devicon-git-plain",
+        "name": "Git",
+        "class": "devicon-git-plain colored",
         "level": "70"
       },
       {
         "name": "Bootstrap",
-        "class": "devicon-bootstrap-plain",
+        "class": "devicon-bootstrap-plain colored",
+        "level": "85"
+      },
+      {
+        "name": "Node JS",
+        "class": "devicon-nodejs-plain-wordmark colored",
+        "level": "85"
+      },
+      {
+        "name": "MongoDB",
+        "class": "devicon-mongodb-plain colored",
+        "level": "85"
+      },
+      {
+        "name": "Elastic Search",
+        "class": "devicon-elasticsearch-plain colored",
+        "level": "85"
+      },
+      {
+        "name": "Redis",
+        "class": "devicon-redis-plain colored",
+        "level": "85"
+      },
+      {
+        "name": "AWS",
+        "class": "devicon-amazonwebservices-plain-wordmark colored",
+        "level": "85"
+      },
+      {
+        "name": "Axios",
+        "class": "devicon-axios-plain",
+        "level": "85"
+      },
+      {
+        "name": "NGINX",
+        "class": "devicon-nginx-original",
         "level": "85"
       }
     ]

@@ -65,12 +65,29 @@ header {
 }
 
 .skills-tile {
-	background-color: transparentize(#F8F5F4, 0.95);
-	padding: 10px 10px 5px 10px;
-	width: 100px;
-	margin: 5px 0 5px 0;
-	border-radius: 8px;
-}
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	perspective: 1000px;
+	will-change: transform;
+	padding: 10px;
+	border-radius: 15px;
+  }
+  
+  .skills-tile i {
+	transition: transform 0.4s ease, color 0.4s ease;
+	display: inline-block;
+	color: #ffffffcc;
+  }
+  
+  .skills-tile:hover {
+	transform: rotateY(10deg) rotateX(10deg) scale(1.1);
+	box-shadow: 0 10px 20px rgba(0, 216, 255, 0.3), 0 4px 10px rgba(0, 216, 255, 0.2);
+	background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .skills-tile i:hover {
+	color: #00d8ff;
+  }
+  
 
 .language {
 	font-size: 25px;
@@ -221,7 +238,18 @@ header h1 {
 #resume {
 	background: #efe1bd;
 }
-
+.vertical-timeline-element-subtitle {
+	display: inline-block;
+	background-color: #f9f5e9; /* Light gray background */
+	padding: 6px 12px;
+	border-radius: 8px;
+	font-size: 1.4rem;
+	font-weight: 800;
+	color: #555;
+	font-style: normal; /* Optional: remove italic if applied before */
+	margin-top: 5px;
+  }
+  
 .experience-icon {
 	font-size: 300%;
 	margin-top: 25%;
@@ -351,6 +379,55 @@ header h1 {
 	text-align: center;
 }
 
+.top-nav {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	display: flex;
+	gap: 2.2rem;
+	z-index: 100;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav-link {
+	color: #444;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 800;
+	position: relative;
+	padding-bottom: 4px;
+	transition: color 0.3s ease;
+	cursor: pointer;
+  
+	// Remove all default outline/border behavior
+	border: none;
+	outline: none;
+	background: transparent;
+	-webkit-tap-highlight-color: transparent;
+  }
+  
+  .nav-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0%;
+	background: linear-gradient(90deg, #7F5AF0, #00AEEF);
+	transition: width 0.4s ease;
+	border-radius: 1px;
+  }
+  
+  .nav-link:hover {
+	color: #7F5AF0;
+  }
+  
+  .nav-link:hover::after {
+	width: 100%;
+  }
+  
+  
+
 .portfolio .portfolio-item .portfolio-item-caption {
 	-webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
@@ -425,4 +502,96 @@ footer a:focus {
 .social-links {
 	margin-top: 50px;
 	font-size: 22px;
+}
+
+/* ======================= */
+/* Header Scoped Nav Styles */
+/* ======================= */
+.header-wrapper .top-nav {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  gap: 10px;
+  white-space: nowrap;
+  border-radius: 30px;
+
+  /* Light theme background */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* subtle border and shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Light theme text color */
+  color: #000;
+
+  z-index: 9999;
+
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-wrapper .nav-links {
+  display: flex;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.header-wrapper .nav-link {
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 4px 6px;
+  white-space: nowrap;
+
+  /* inherit color from container */
+  color: inherit;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header-wrapper .nav-link:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+/* Dark theme overrides */
+body[data-theme="dark"] .header-wrapper .top-nav {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+
+  /* Light text for dark background */
+  color: #eee !important;
+}
+
+body[data-theme="dark"] .header-wrapper .nav-link {
+  color: #eee !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-wrapper .top-nav {
+    padding: 8px 14px;
+    right: 15px;
+    top: 8px;
+    gap: 8px;
+  }
+
+  .header-wrapper .nav-links {
+    gap: 8px;
+  }
+
+  .header-wrapper .nav-link {
+    font-size: 0.9rem;
+    padding: 3px 5px;
+  }
 }

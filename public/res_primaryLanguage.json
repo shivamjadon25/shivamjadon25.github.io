@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Hi",
-    "description": "👋 I'm Shivam Jadon. Mechanical Engineer turned Front-End Developer with a passion for programming and a love for Urdu and Hindi poetry. Skilled in crafting visually appealing and user-friendly interfaces, combining technical expertise with a creative flair. A dedicated individual with a keen eye for aesthetics and a background in problem-solving.",
+    "description": "👋 I'm Shivam Jadon. Mechanical Engineer turned Fullstack Developer with a passion for programming and a love for hindi and urdu poetry. Skilled in crafting visually appealing and user-friendly interfaces, combining technical expertise with a creative flair. A dedicated individual with a keen eye for aesthetics and a background in problem-solving.",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -10,6 +10,75 @@
     }
   },
   "projects": [
+    {
+      "title": "Bluesky Weather",
+      "startDate": "2023",
+      "description": "Beautiful weather app using HTML, CSS, Javascript :)",
+      "images": [
+        "images/portfolio/portfolio/p1.png"
+      ],
+      "url": "https://github.com/shivamjadon25/blueskyweather.github.io",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Wallsy",
+      "startDate": "2023",
+      "description": "Wallpaper all build using HTML, CSS, Javascript :)",
+      "images": [
+        "images/portfolio/portfolio/p2.png"
+      ],
+      "url": "https://shivamjadon25.github.io/wallsy.github.io/",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Neeuz",
+      "startDate": "2024",
+      "description": "A news app build using HTML, CSS, Javascript :)",
+      "images": [
+        "images/portfolio/portfolio/p3.png"
+      ],
+      "url": "https://shivamjadon25.github.io/neeuz.github.io/",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
     {
       "title": "Drona Kernel",
       "startDate": "2020",
@@ -30,7 +99,7 @@
       ]
     },
     {
-      "title": "Android ROM",
+      "title": "Project Sakura - Android ROM",
       "startDate": "2021",
       "description": "Personal project. I was responsible for building and maintaining an android skin based on Google's AOSP for Poco X2(Phoenixin) device. The name of that rom was Project Sakura it was build on top of AOSP with many customizations options :)",
       "images": [
@@ -40,31 +109,8 @@
       "url": "https://forum.xda-developers.com/t/rom-11-0-project-sakura-official.4233069/",
       "technologies": [
         {
-          "class": "devicon-python-original",
+          "class": "devicon-python-plain",
           "name": "Python"
-        },
-        {
-          "class": "devicon-javascript-plain",
-          "name": "JavaScript"
-        }
-      ]
-    },
-    {
-      "title": "Portfolio Website",
-      "startDate": "2021",
-      "description": "Personal portfolio website build using HTML, CSS, Javascript :)",
-      "images": [
-        "images/portfolio/portfolio/p1.png"
-      ],
-      "url": "https://github.com/shivamjadon/shivamjadon.github.io",
-      "technologies": [
-        {
-          "class": "devicon-html-original",
-          "name": "HTML"
-        },
-        {
-          "class": "devicon-css-plain",
-          "name": "CSS"
         },
         {
           "class": "devicon-javascript-plain",
@@ -76,17 +122,50 @@
   "experience": [
     {
       "company": "BlackBeltHelp",
-      "title": "Front-End Developer",
-      "years": "03.2021 - present",
+      "title": "Fullstack Developer",
+      "years": "03.2025 - present",
       "mainTech": [
-        "React"
+        "React JS",
+        "Node JS"
       ],
       "technologies": [
-        "REST API",
+        "React JS",
+        "Node JS",
+        "Elasticsearch",
+        "MongoDB",
+        "Opensearch",
+        "Redis",
         "JavaScript",
-        "Bootstrap",
-        "ReactJs",
-        "MaterialUi"
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "company": "BlackBeltHelp",
+      "title": "Frontend Developer",
+      "years": "10.2022 - 02.2025",
+      "mainTech": [
+        "React JS"
+      ],
+      "technologies": [
+        "React JS",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "company": "BlackBeltHelp",
+      "title": "ChatBot Developer",
+      "years": "03.2021 - 09.2022",
+      "mainTech": [
+        "Javascript"
+      ],
+      "technologies": [
+        "Google Dialoglow",
+        "JavaScript",
+        "HTML",
+        "SSML"
       ]
     },
     {
@@ -97,6 +176,7 @@
         "Mechanical Engineer"
       ],
       "technologies": [
+        "SAP"
       ]
     }
   ]

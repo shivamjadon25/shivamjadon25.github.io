@@ -32,12 +32,13 @@ class Experience extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={work.years}
+            contentStyle={{ borderRadius: "15px", boxShadow: "0 4px 20px rgba(0,0,0,0.1)" }} // <-- Rounded card
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-react experience-icon"></i>}
+            icon={<i className="fas fa-briefcase experience-icon"></i>}
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>

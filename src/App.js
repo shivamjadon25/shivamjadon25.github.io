@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import $ from "jquery";
 import "./App.scss";
 import Header from "./components/Header";
@@ -9,7 +9,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 class App extends Component {
-
   constructor(props) {
     super();
     this.state = {
@@ -17,6 +16,12 @@ class App extends Component {
       resumeData: {},
       sharedData: {},
     };
+
+    // Section refs
+    this.aboutRef = createRef();
+    this.projectsRef = createRef();
+    this.skillsRef = createRef();
+    this.experienceRef = createRef();
   }
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
@@ -79,10 +84,24 @@ class App extends Component {
     });
   }
 
+  scrollTo = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
+        <Header
+          sharedData={this.state.sharedData.basic_info}
+          onNavClick={{
+            about: () => this.scrollTo(this.aboutRef),
+            projects: () => this.scrollTo(this.projectsRef),
+            skills: () => this.scrollTo(this.skillsRef),
+            experience: () => this.scrollTo(this.experienceRef),
+          }}
+        />
         <div className="col-md-12 mx-auto text-center language">
           <div
             onClick={() =>
@@ -117,22 +136,30 @@ class App extends Component {
             ></span>
           </div>
         </div>
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
+        <div ref={this.aboutRef}>
+          <About
+            resumeBasicInfo={this.state.resumeData.basic_info}
+            sharedBasicInfo={this.state.sharedData.basic_info}
+          />
+        </div>
+        <div ref={this.projectsRef}>
+          <Projects
+            resumeProjects={this.state.resumeData.projects}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+        </div>
+        <div ref={this.skillsRef}>
+          <Skills
+            sharedSkills={this.state.sharedData.skills}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+        </div>
+        <div ref={this.experienceRef}>
+          <Experience
+            resumeExperience={this.state.resumeData.experience}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+        </div>
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );
