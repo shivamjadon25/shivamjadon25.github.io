@@ -52,16 +52,16 @@ class Header extends Component {
       >
         <nav className="top-nav">
           <div className="nav-links">
-            <a className="nav-link" onClick={onNavClick.about}>
+            <a href="#" className="nav-link" onClick={onNavClick.about}>
               About
             </a>
-            <a className="nav-link" onClick={onNavClick.projects}>
+            <a href="#" className="nav-link" onClick={onNavClick.projects}>
               Projects
             </a>
-            <a className="nav-link" onClick={onNavClick.skills}>
+            <a href="#" className="nav-link" onClick={onNavClick.skills}>
               Skills
             </a>
-            <a className="nav-link" onClick={onNavClick.experience}>
+            <a href="#" className="nav-link" onClick={onNavClick.experience}>
               Experience
             </a>
           </div>
